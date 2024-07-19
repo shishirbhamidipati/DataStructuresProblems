@@ -4,9 +4,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Problem1 {
-    //Arraylist implementation in list interface??
-    //stack, arraylist, vector implementations
-    //Also think about Time and space complexity when you are solving problems
 
     //Reverse an ArrayList
 
