@@ -1,27 +1,26 @@
-package ArrayListPractice;
-import java.util.List;
+package VectorPractice;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-
-public class Problem7 {
-
-
-    public static void rotateLeft(List<Integer> list, int k){
-        int size = list.size();
+import java.util.Vector;
+public class Problem3 {
+    //rotate a vector to the left/right
+    public static void rotateLeft(List<Integer> vector, int k){
+        int size = vector.size();
         k = k % size;
         for(int i =0; i < k; i++){
-            list.add(list.remove(0));
+            vector.add(vector.remove(0));
         }
     }
-    public static void rotateRight(List<Integer> list, int k) {
-        int size = list.size();
+    public static void rotateRight(List<Integer> vector, int k) {
+        int size = vector.size();
         k = k % size;
         for (int i = 0; i < k; i++) {
-            list.add(0, list.remove(size - 1));
+            vector.add(0, vector.remove(size - 1));
         }
     }
     public static void main(String[] args){
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new Vector<>();
 
         int i =1;
         while(i < 8){

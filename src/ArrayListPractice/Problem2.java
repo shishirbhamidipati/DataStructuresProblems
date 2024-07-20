@@ -21,7 +21,6 @@ public class Problem2 {
         list.add(2);
         list.add(1);
         // 1 2 3 2 1
-        //
         boolean result = isPalindrome(list);
         System.out.println(result);
 
