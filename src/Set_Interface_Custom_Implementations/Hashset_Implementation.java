@@ -1,6 +1,5 @@
 package Set_Interface_Custom_Implementations;
 import java.util.Set;
-import java.util.HashSet;
 import java.util.HashMap;
 //implement hashset using hashmap
 public class Hashset_Implementation<T> {
@@ -12,6 +11,9 @@ public class Hashset_Implementation<T> {
     }
     public boolean add(T t){
         return map.put(t, PRESENT) == null;
+    }
+    private int customHash(T t) {
+        return t.hashCode() % map.size();
     }
 
     public boolean contains(T t){
